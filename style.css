@@ -1,0 +1,17 @@
+.nav{
+    display: inline-block;
+  background-color: blue;
+}
+
+.container {
+    margin-left: 50px !important;
+}
+
+.test {
+    justify-content: center;
+}
+
+.test > ul > li {
+    margin-right: 10px;
+    
+}

@@ -1,17 +1,79 @@
-.nav{
-    display: inline-block;
-  background-color: blue;
-}
 
-.container {
-    margin-left: 50px !important;
+header {
+    justify-content: space-between;
 }
 
 .test {
+    margin-top: 30px;
     justify-content: center;
 }
 
 .test > ul > li {
-    margin-right: 10px;
-    
+    margin-right: 35px;
+    font-size: x-small;
 }
+
+.myshop {
+    margin-top: 30px;
+    font-size: x-small;
+}
+
+i {
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.banner {
+    height: 240px;
+    background-image: url(../ecf2/storefront/media/plates-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner > div {
+    height: 240px;
+    width: 55%;
+    margin: auto;
+    padding-top: 60px;
+    background-color: lightslategray;
+    border-left: solid 10px white;
+    border-right: solid 10px white;
+}
+
+.banner > div > h2 {
+    text-align: center;
+}
+
+hr {
+    width: 20%;
+    margin: auto;
+}
+
+.banner > div > p {
+    margin: 20px;
+    font-size: smaller;
+}
+
+.grid {
+    width: 80%;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.row > div > p, .row > div > h6 {
+    text-align: center;
+
+}
+
+.row > div > h6 {
+    font-size: smaller;
+}
+
+.row > div > p {
+    font-size: x-small ;
+    color:lightslategrey;
+
+}
+
+
+    

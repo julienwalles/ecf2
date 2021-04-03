@@ -1,0 +1,60 @@
+
+header {
+    justify-content: space-between;
+}
+
+.test {
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.test > ul > li {
+    margin-right: 35px;
+    font-size: x-small;
+}
+
+.myshop {
+    margin-top: 30px;
+    font-size: x-small;
+}
+
+i {
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.breadcrumb {
+  text-align: center;
+  font-size: x-small;
+  justify-content: center;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 3px;
+    color: black;
+    content: "/\00a0";
+}
+
+.caracteristics{
+    margin: 40px 120px 20px;
+
+}
+
+
+.caracteristics > div > div {
+    width: 35%;
+    font-size: small;
+    text-align: center;
+    display: inline-block;
+  }
+
+.img1 {
+    float: left;
+}
+
+.caracteristics::after {
+    clear: both;
+    display: table;
+} 
+
+

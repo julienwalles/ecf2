@@ -25,7 +25,7 @@ i {
 
 .banner {
     height: 240px;
-    background-image: url(/storefront/media/plates-header.jpg);
+    background-image: url(./storefront/media/plates-header.jpg);
     background-size: cover;
     background-position: center;
 }

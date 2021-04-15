@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 
     <title>ECF2</title>
 </head>
@@ -30,13 +33,28 @@
                         <li><a href="./index.html">HOME</a></li>
                         <li><a href="./shoppingCart.html">SHOP</a><i class="fa fa-sort-desc fa-1x"></i></li>
                         <li><a href="">JOURNAL</a></li>
-                        <li><a id="dropdown" href="">MORE</a><i class="fa fa-sort-desc fa-1x"></i>
+                        <li id="dropdown">MORE<i class="fa fa-sort-desc fa-1x"></i>
+
                         </li>
                     </ul>
                 </div>
 
 
-                <div class="myshop col-xs-2 col-sm-2 col-md-2 col-lg-1"><a href="">MY CART (2)</a><i class="fa fa-sort-desc fa-1x"></i></div>
+                <div class="myshop col-xs-2 col-sm-2 col-md-2 col-lg-1">MY CART (2)<i class="fa fa-sort-desc fa-1x"></i>
+                    <div class="dropdown-content row">
+                        <div class="image col-3">
+                            <img src="./storefront/media/hand-painted-blue-flat-dish.jpg">
+                        </div>
+
+                        <div class="col-9">
+                            <p>
+                                <span>KIRIKO</span><br>
+                                <span>HAND PAINTED BLUE FLAT DISH</span><br>
+                                <span>COLOR:WHITE</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -44,27 +62,33 @@
 
     <section class="banner">
         <div class="plates">
-            <h2 class="title">Plates</h2><hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            <h2 class="title">Plates</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </section>
 
     <section class="wrapper">
-        
-     <article>
-            <img src="./storefront/media/blue-stripe-stoneware-plate.jpg">
+
+        <article class="container">
+            <img classe="image" src="./storefront/media/blue-stripe-stoneware-plate.jpg">
 
             <p>
                 <span class="marque">Kiriko</span><br>
                 <span class="modele">BLUE STRIPE STONEWARE PLATE</span><br>
                 <span class="prix">$40.00</span><br>
             </p>
-            
+
+            <div class="middle">
+                <div id="viewDetails">View details</div>
+                <div id="addToCart">Add to cart</div>
+            </div>
+
         </article>
 
-        <article>
-            <img src="./storefront/media/hand-painted-blue-flat-dish.jpg">
+        <article class="container">
+            <img classe="image" src="./storefront/media/hand-painted-blue-flat-dish.jpg">
 
             <p>
                 <span class="marque">Kiriko</span><br>
@@ -72,61 +96,88 @@
                 <span class="prix">$28.00</span><br>
             </p>
 
-             <div id="overlay">
-                 <div id="viewDetails">View details</div>
-                 <div id="addToCart">Add to cart</div>
-             </div>
-            
+            <div class="middle">
+                <div id="viewDetails">
+                    <a href="./productDetails.html">View details</a>
+                </div>
+                <div id="addToCart">Add to cart</div>
+            </div>
+
         </article>
 
-        <article>
-            <img src="./storefront/media/heme.jpg">
+        <article class="container">
+            <img classe="image" src="./storefront/media/heme.jpg">
 
             <p>
                 <span class="marque">Dust&Form</span><br>
                 <span class="modele">HEME</span><br>
                 <span class="prix">$52.00</span>
             </p>
-            
+
+            <div class="middle">
+                <div id="viewDetails">View details</div>
+                <div id="addToCart">Add to cart</div>
+            </div>
+
         </article>
 
-        <article>
-            <img src="./storefront/media/mashiko-yaki-green-small-plate.jpg">
+        <article class="container">
+            <img classe="image" src="./storefront/media/mashiko-yaki-green-small-plate.jpg">
 
             <p>
                 <span class="marque">Kiriko</span><br>
                 <span class="modele">MASHIKO-YAKI GREEN SMALL PLATE</span><br>
                 <span class="prix">$18.00</span><br>
             </p>
-            
+
+            <div class="middle">
+                <div id="viewDetails">View details</div>
+                <div id="addToCart">Add to cart</div>
+            </div>
+
         </article>
 
-        <article>
-            <img src="./storefront/media/mashiko-yaki-indigo-small-plate.jpg">
+        <article class="container">
+            <img classe="image" src="./storefront/media/mashiko-yaki-indigo-small-plate.jpg">
 
             <p>
                 <span class="marque">Kiriko</span><br>
                 <span class="modele">MASHIKO-YAKI INDIGO SMALL PLATE</span><br>
                 <span class="prix">$28.00</span><br>
             </p>
-            
+
+            <div class="middle">
+                <div id="viewDetails">View details</div>
+                <div id="addToCart">Add to cart</div>
+            </div>
+
         </article>
 
-        <article>
-            <img src="./storefront/media/mashiko-yaki-saucer.jpg">
+        <article class="container">
+            <img classe="image" src="./storefront/media/mashiko-yaki-saucer.jpg">
 
             <p>
                 <span class="marque">Kiriko</span><br>
                 <span class="modele">MASHIKO-YAKI SAUCER</span><br>
                 <span class="prix">$18.00</span>
             </p>
-            
+
+            <div class="middle">
+                <div id="viewDetails"></div>
+                <div id="addToCart">Add to cart</div>
+            </div>
+
         </article>
     </section>
 
+    <script>
+        $(document).ready(function () {
 
-
-
+            $(".myshop").click(function () {
+                $(".dropdown-content").css("display", "block");
+            });
+        });
+    </script>
 </body>
 
 </html>
